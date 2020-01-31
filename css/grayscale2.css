@@ -99,7 +99,7 @@
 
 .masthead h1 {
   font-family: 'Varela Round';
-  font-size: 2.5rem;
+  font-size: 2.0rem;
   line-height: 2.5rem;
   letter-spacing: 0.8rem;
   background: -webkit-linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
@@ -146,11 +146,11 @@
 }
 
 .btn-primary {
-  background-color: #64a19d;
+  background-color: #cb6446;
 }
 
 .btn-primary:hover {
-  background-color: #4f837f;
+  background-color: #cb8c48;
 }
 
 .btn-primary:focus {
@@ -204,7 +204,8 @@
 
 .signup-section {
   padding: 10rem 0;
-  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%), url("../img/ambient.JPG");
+  background: linear-gradient(to top, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%)
+  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%), url("../img/Glaze.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -261,6 +262,7 @@
 .contact-section .social a:hover {
   color: rgba(255, 255, 255, 0.5);
 }
+
 
 .contact-section .social a:active {
   color: #fff;
