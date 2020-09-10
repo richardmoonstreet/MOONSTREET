@@ -1,0 +1,448 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154340363-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-154340363-1');
+  </script>
+
+<!--portfolio js from here to style section-->
+<script>
+filterSelection("all") // Execute the function and show all columns
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+// Show filtered elements
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {
+      element.className += " " + arr2[i];
+    }
+  }
+}
+
+// Hide elements that are not selected
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+
+  <style>
+/*portfolio is from here down to projects section */
+
+  .myBtnContainer-section
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: #f1f1f1;
+    padding: 20px;
+    font-family: Arial;
+  }
+
+  /* Center website */
+  .main {
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  h1 {
+    font-size: 50px;
+    word-break: break-all;
+  }
+
+  .row {
+    margin: 8px -16px;
+  }
+
+  /* Add padding BETWEEN each column (if you want) */
+  .row,
+  .row > .column {
+    padding: 8px;
+  }
+
+  /* Create three equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 33.33%;
+    display: none; /* Hide columns by default */
+  }
+
+  /* Clear floats after rows */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* Content */
+  .content {
+    background-color: white;
+    padding: 10px;
+  }
+
+  /* The "show" class is added to the filtered elements */
+  .show {
+    display: block;
+  }
+
+  /* Style the buttons */
+  .btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: white;
+    cursor: pointer;
+  }
+
+  /* Add a grey background color on mouse-over */
+  .btn:hover {
+    background-color: #ddd;
+  }
+
+  /* Add a dark background color to the active button */
+  .btn.active {
+    background-color: #666;
+     color: white;
+  }
+</style>
+
+  <!--favicon-->
+<link rel="apple-touch-icon" sizes="57x57" href="img/favicon.jpg">
+<link rel="apple-touch-icon" sizes="60x60" href="img/favicon.jpg">
+<link rel="apple-touch-icon" sizes="72x72" href="img/favicon.jpg">
+<link rel="apple-touch-icon" sizes="76x76" href="img/favicon.jpg">
+<link rel="apple-touch-icon" sizes="114x114" href="img/favicon.jpg">
+<link rel="apple-touch-icon" sizes="120x120" href="img/favicon.jpg">
+<link rel="apple-touch-icon" sizes="144x144" href="img/favicon.jpg">
+<link rel="apple-touch-icon" sizes="152x152" href="img/favicon.jpg">
+<link rel="apple-touch-icon" sizes="180x180" href="img/favicon.jpg">
+<link rel="icon" type="image/png" sizes="192x192"  href="img/favicon.jpg">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon.jpg">
+<link rel="icon" type="image/png" sizes="96x96" href="img/favicon.jpg">
+<link rel="icon" type="image/png" sizes="16x16" href="img/favicon.jpg">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="img/favicon.jpg">
+<meta name="theme-color" content="#ffffff">
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Groovy things made from clay! Richard Moonstreet is a British Ceramic artist based in London. Find a piece of pottery to treasure in our online store, or view our collections.">
+  <meta name="author" content="Richard Moonstreet Ceramics">
+  <meta name="og:title" property="og:title" content="Shop">
+
+  <title>Shop</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/grayscale.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="index.html">HOME</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="index.html">About</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="index.html">What's New?</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="index.html">Collections</a>
+          </li>
+
+                <li class="nav-item">
+<a class="nav-link js-scroll-trigger" href="shop.html">Buy Online</a>
+ </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="index.html">Learning</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="index.html">Socials</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <!--shop highlight-->
+
+  <!-- Project One Row -->
+
+
+  <!-- Page Content -->
+
+  <section id="gallery">
+  <div class="container">
+
+    <h1 class="font-weight-light text-center text-lg-left mt-4 mb-0"><br>Shop Under Contsruction - Click BUY ONLINE above</h1>
+    <p class="text-50 font-weight-light text-center text-lg-left mt-4 mb-0">Each Richard Moonstreet piece is a unique handmade item, crafted with love in London.<br>
+    On this page is a full list of current available pieces. For more details, and to buy, click on each image below.<br>
+    But be quick! Each piece is a unique one of a kind item.<br>
+    <a href="shop.html#terms"> To learn about delivery, shop terms and FAQs, click here.</a> <br><br><br>
+    </p>
+    </div>
+
+  </div>
+  </section>
+
+<section>
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('vases')"> Vases</button>
+  <button class="btn" onclick="filterSelection('ornaments')"> Ornaments</button>
+  <button class="btn" onclick="filterSelection('pigeons')"> Pigeons</button>
+  <button class="btn" onclick="filterSelection('sale')">SALE</button>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column pigeons">
+    <div class="content">
+      <img src="img/chips3.jpg" alt="pigeons" style="width:100%">
+      <h4>Pigeon with chips</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column pigeons">
+    <div class="content">
+      <img src="img/IMG_3944.jpg" alt="pigeons" style="width:100%">
+      <h4>Elliot the Pigeon</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column vases">
+    <div class="content">
+      <img src="img/beakvase.jpg" alt="vases" style="width:100%">
+      <h4>Vase</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+
+  <div class="column vases">
+    <div class="content">
+      <img src="img/beakvase.jpg" alt="vases" style="width:100%">
+      <h4>Vase</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column ornaments">
+    <div class="content">
+      <img src="img/Tree 2.jpg" alt="ornaments" style="width:100%">
+      <h4>Ornaments</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column vases">
+    <div class="content">
+      <img src="img/beakvase.jpg" alt="vase" style="width:100%">
+      <h4>Vase</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+
+  <div class="column ornaments">
+    <div class="content">
+      <img src="img/Tree 2.jpg" alt="ornaments" style="width:100%">
+      <h4>Ornaments</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column sale">
+    <div class="content">
+      <img src="img/bluesmall.jpg" alt="sale" style="width:100%">
+      <h4>Sale</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column sale">
+    <div class="content">
+      <img src="img/bluesmall.jpg" alt="sale" style="width:100%">
+      <h4>Sale</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+</section>
+<br>
+
+
+
+  <!-- About Section -->
+  <section id="terms" class="about-section text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 mx-auto">
+          <h2 class="text-white mb-4">Checkout, Delivery & FAQs</h2>
+                  <p class="text-white-50" align="justify">
+<br>Q: How will my item be shipped?<br>
+A: In the UK, items will be sent either tracked Royal Mail or tracked courier (DPD/DX Delivery or UPS). Richard Moonstreet has a strictly <b>NO HERMES/YODEL</b> policy so you can buy in confidence to know your item will be sent using a more reputable carrier. For European and US/Worldwide delivery, this will typically be sent via UPS or DHL or FedEx. All carriers are chosen to optimise value without sacrificing standard and vary depending on each order due to item and availability of services. Tracking numbers will be supplied if delivery is due to take more than 3 days.
+
+                    <br><br>
+                    Q: Can I collect a larger item in person?<br>
+A: Yes, <a href="shop.html#signup">please contact </a>to arrange and you can collect from studio in Stamford Hill/Stoke Newington, N16, London <br><br>
+
+Q: Are images accurate as to what I will receive?<br>
+A: Yes, all images are accurate and not edited aside from sizing and enhancing for web.<br><Br>
+
+Q: Is this the item I will receive or is it an example?<br>
+A: All listings are sold as unique one off items. In cases of larger collections, like Christmas trees, eggs, Hap-peas, etc... you are able to choose the exact one you will receive.
+<br><br>
+Q: How do I know production quality?<br>
+A: All items are photographed as finished. In the ceramic production process there will always be something which doesn't go 100% as planned, but any glaring defects will always be disclosed. Some very minor cosmetic points are more common and will not always be highlighted. Handmade items are never to be expected as factory quality perfect. This is not limited to glaze (the colouring and cover and consistency) and clay body (marks made during making and finishing). Please note, the base of ceramic items are never glazed and will always look unfinished. This is because if the bases are glazed it will make the piece stick to the kiln during firing.
+    <br><br>
+
+Q: What is your Privacy Policy?<br>
+A: During checkout, you will be asked for your shipping address, email and possibly a contact number. Under GDPR this information will only be used in relation to the delivery of your order and will only be passed on to your courier, if required. All card payments are handled by <a href="https://stripe.com/en-gb/privacy">STRIPE, who have their own privacy policy.</a> We have no control over their processing of payments or how this is collected from your bank.
+</div>
+</div>
+          </div>
+
+              </section>
+
+
+  <!-- Contact Section -->
+  <section id="signup" class="contact-section bg-black">
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-md-4 mb-3 mb-md-0">
+          <div class="card py-4 h-100">
+            <div class="card-body text-center">
+                <i class="fab fa-instagram"></i>
+              <h4 class="text-uppercase m-0">Instagram</h4>
+
+              <hr class="my-4">
+                            <div class="small text-black-50">  <a href="http://instagram.com/RichardMoonstreet/">See my latest projects</a></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-3 mb-md-0">
+          <div class="card py-4 h-100">
+            <div class="card-body text-center">
+              <h4 class="text-uppercase m-0">Email</h4>
+              <hr class="my-4">
+              <div class="small text-black-50">
+                <a href="#">RichardMoonstreet@outlook.com</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-3 mb-md-0">
+          <div class="card py-4 h-100">
+            <div class="card-body text-center">
+              <i class="fab fa-twitter"></i>
+              <h4 class="text-uppercase m-0">Twitter</h4>
+
+              <hr class="my-4">
+              <div class="small text-black-50">  <a href="http://twitter.com/MoonstreetClay">Follow Me!</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="social d-flex justify-content-center">
+        <a href="http://www.twitter.com/MoonstreetClay" class="mx-2">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="http://www.instagram.com/RichardMoonstreet" class="mx-2">
+          <i class="fab fa-instagram"></i>
+        </a>
+
+      </div>
+
+    </div>
+  </section>
+
+
+
+
+  <!-- Footer -->
+  <footer class="bg-black small text-center text-white-50">
+    <div class="container">
+      Copyright &copy; Richard Moonstreet 2020<br>Content and images by Richard Moonstreet <br>Web development by <a href="http://twitter.com/azdolan94"</a>Aidan Dolan. </a>
+    </div><br><br>
+
+  <img src="https://i.imgur.com/CPQjguI.gif" alt="Proud to be a European LGBT designer" title="European LGBT designer network" height=70rem width=110rem align="centre" hspace=2rem>
+
+  </footer>
+
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/grayscale.min.js"></script>
+
+</body>
+
+</html>
