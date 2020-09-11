@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154340363-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-154340363-1');
+  </script>
+
+  <!--favicon-->
+<link rel="apple-touch-icon" sizes="57x57" href="img/favicon.jpg">
+<link rel="apple-touch-icon" sizes="60x60" href="img/favicon.jpg">
+<link rel="apple-touch-icon" sizes="72x72" href="img/favicon.jpg">
+<link rel="apple-touch-icon" sizes="76x76" href="img/favicon.jpg">
+<link rel="apple-touch-icon" sizes="114x114" href="img/favicon.jpg">
+<link rel="apple-touch-icon" sizes="120x120" href="img/favicon.jpg">
+<link rel="apple-touch-icon" sizes="144x144" href="img/favicon.jpg">
+<link rel="apple-touch-icon" sizes="152x152" href="img/favicon.jpg">
+<link rel="apple-touch-icon" sizes="180x180" href="img/favicon.jpg">
+<link rel="icon" type="image/png" sizes="192x192"  href="img/favicon.jpg">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon.jpg">
+<link rel="icon" type="image/png" sizes="96x96" href="img/favicon.jpg">
+<link rel="icon" type="image/png" sizes="16x16" href="img/favicon.jpg">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="img/favicon.jpg">
+<meta name="theme-color" content="#ffffff">
+
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Whimsical Ceramics. Richard Moonstreet is a British Ceramic artist based in London. Find unusual decorative sculpture or a quirky piece pottery to treasure in our online store, or view our collections to see what we do!">
+  <meta name="author" content="Richard Moonstreet Ceramics">
+  <meta name="og:title" property="og:title" content="Richard Moonstreet Ceramics">
+
+  <title>Richard Moonstreet Ceramics</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/grayscale.min.css" rel="stylesheet">
+
+<!-- TrustBox script -->
+<script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
+<!-- End TrustBox script -->
+
+<!--portfolio js from here to style section-->
+<script>
+filterSelection("all") // Execute the function and show all columns
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+// Show filtered elements
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {
+      element.className += " " + arr2[i];
+    }
+  }
+}
+
+// Hide elements that are not selected
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+
+  <style>
+/*portfolio is from here down to projects section */
+
+  .myBtnContainer-section
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: #f1f1f1;
+    padding: 20px;
+    font-family: Arial;
+  }
+
+  /* Center website */
+  .main {
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  h1 {
+    font-size: 50px;
+    word-break: break-all;
+  }
+
+  .row {
+    margin: 8px -16px;
+  }
+
+  /* Add padding BETWEEN each column (if you want) */
+  .row,
+  .row > .column {
+    padding: 8px;
+  }
+
+  /* Create three equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 33.33%;
+    display: none; /* Hide columns by default */
+  }
+
+  /* Clear floats after rows */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* Content */
+  .content {
+    background-color: white;
+    padding: 10px;
+  }
+
+  /* The "show" class is added to the filtered elements */
+  .show {
+    display: block;
+  }
+
+  /* Style the buttons */
+  .btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: white;
+    cursor: pointer;
+  }
+
+  /* Add a grey background color on mouse-over */
+  .btn:hover {
+    background-color: #ddd;
+  }
+
+  /* Add a dark background color to the active button */
+  .btn.active {
+    background-color: #666;
+     color: white;
+  }
+</style>
+
+</head>
+
+
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">HOME</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#gallery">What's New?</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#projects">Collections</a>
+          </li>
+
+
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#signup">Socials</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="Survey.html#Survey"><p class=
+            <p class="text-danger font-weight-bold">Survey</p></a>
+          </li>
+
+          <li class="nav-item">
+        <a class="nav-link js-scroll-trigger" href="https://richard-moonstreet-ceramics.square.site/">SHOP</a>
+        </li>
+
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Header -->
+  <header class="masthead">
+    <div class="container d-flex h-100 align-items-center">
+      <div class="mx-auto text-center">
+        <h1 class="mx-auto my-0 text-uppercase">RICHARD MOONSTREET </h1>
+        <h2 class="text-white-50 mx-auto mt-2 mb-5">Charismatic Clay</h2>
+        <a href="#gallery" class="btn btn-primary js-scroll-trigger">See what's new!</a>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- About Section -->
+  <section id="about" class="about-section text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 mx-auto">
+          <h2 class="text-white mb-4">Who?</h2>
+        <img class="img-fluid" src="img/Profilepicture.jpg" alt="The white KCOM K6 telepphone boxes in Hull do not match the red uniform colours of BT elsewhere in the UK" title="Tex being a geek over non-uniform K6 telepphone boxes in Hull" height="380rem" width="260rem" align="left" vpsace="2rem" hspace="8rem">
+          <p class="text-white-50" align="justify">My name is Tex and I'm from London. I started Richard Moonstreet Ceramics in 2019 as I began my journey into studio pottery.
+            I try to avoid using my own name for new projects in case they go horribly wrong and it becomes my legacy, so Richard was my escape. My art name, or my 'Nom de Pot'. Thankfully things haven't gone that horribly wrong...yet.
+            The name comes from a road in Crewe called Richard Moon Street (named apparently after a jolly chap who ran the London Northwestern Railway in the 1800's). Our Google Home device randomly gave us directions to this street, unprovoked, at 2am one morning, so it was committed to memory, more through irritation than interest.<br><br>
+          Even though the name was plucked out the mind of a digital assistant,  I realised soon as I continued building my own style, the name started to suit what I was making. Instead of a random scrawl in the base of a vessel, which differentiated my bisque-ware from other artists in the studio, it became a ceramic identity. Now I look at Richard Moonstreet and see unique twists on the familiar. Mundane objects given a flair that nobody really asked for. But most of all I just see something fun and different. I've shared some of my creations on this site, and you can see them in the collections below. <a href="https://richard-moonstreet-ceramics.square.site/"> Many of the items show are available to own, so if there's any that you fall in love with, click the link and it can be yours!</a> I'm very grateful for the support in my creations, and if you have any feedback or something you'd love to see me do next, drop me a line below or follow the socials!</p>
+        </div>
+      </div>
+          </div>
+
+              </section>
+
+<!--shop highlight-->
+
+<!-- Project One Row -->
+
+
+<!-- Page Content -->
+
+<section id="gallery">
+<div class="container">
+
+  <h1 class="font-weight-light text-center text-lg-left mt-4 mb-0">Just Landed...</h1>
+  <p class="text-50 font-weight-light text-center text-lg-left mt-4 mb-0">New birds in the flock, fresh out the kiln!</p>
+
+
+  <hr class="mt-2 mb-5">
+
+  <div class="row text-center text-lg-left">
+
+    <div class="col-lg-3 col-md-4 col-6">
+      <a href="https://richard-moonstreet-ceramics.square.site/" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="img/pigeonglazed.jpg" alt="Ceramic Pottery Pigeon">
+          </a>
+    </div>
+
+    <div class="col-lg-3 col-md-4 col-6">
+      <a href="https://richard-moonstreet-ceramics.square.site/" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="img/beakvase.jpg" alt="Ceramic Vase with a bird's beak!">
+          </a>
+        </div>
+
+          <div class="col-lg-3 col-md-4 col-6">
+            <a href="https://richard-moonstreet-ceramics.square.site/" class="d-block mb-4 h-100">
+                  <img class="img-fluid img-thumbnail" src="img/chips3.jpg" alt="Pigeon holding some chips!">
+                </a>
+          </div>
+
+    <div class="col-lg-3 col-md-4 col-6">
+      <a href="https://richard-moonstreet-ceramics.square.site/" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="img/king.jpg" alt="King Among Hen">
+          </a>
+    </div>
+
+
+  </div>
+
+    </div>
+  </div>
+
+</div>
+</section>
+<!-- /.container -->
+
+
+<br>
+
+
+</section>
+
+    <!-- About Section -->
+    <section id="projects" class="about-section text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 mx-auto">
+            <h2 class="text-white mb-4">Inspiration & Collections</h2>
+          <img class="img-fluid" src="img/IMG_1627.JPG" alt="Feeding chickens at Colchester Zoo" title="Supplying breakfast to some feathered friends" height="380rem" width="260rem" align="right" vpsace="2rem" hspace="10rem">
+            <p class="text-white-50" align="justify">I've always loved wildlife and animals. I remember sketching cartoon robins in junior school, adding hats and various characteristics and exagerating them into fat little birds. I even tried to offer the artwork to greeting card companies but nobody really expressed interest (perhaps because I was 9). I think that's where the ceramic chickens emerged from, I always make sure to do a very tubby belly to give them the lardy character they deserve. I recently got some very funny/annoyed looks from the neighbours when I took delivery of 100kg of bird seed to keep the sparrows and pigeons on my balcony from being hungry over the winter. All birds deserve to be chunky. <br><br>As for everything else, I've always had a desire to make people happy. It seldom works. Nevertheless I will add expressions and smiles to my work wherever possible. Whether that's a very literal smirk on a pea in a pod, or just throwing and handbuilding something so non-sensical and ridiculous that you can't help look at it and smile. I've not yet met a ceramicist who would take a day off from bowls and vases to make a goose in a dustbin, or a surreal fried egg inspired by Dali's dripping clocks, so I'm glad to be cornering the market on things that nobody really needs (but hopefully secretly wants).
+              <br><br>
+              Wherever I go from here - and I have some totally preposterous ideas - I do hope to continue with the current mantra of just making things that spread some happiness.
+            </p>
+           </div>
+        </div>
+            </div>
+    </section><br>
+
+  <!-- Projects Section -->
+
+        <section id="newprojects">
+            <div class="justify-content-center d-md-flex" id="myBtnContainer">
+          <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+          <button class="btn" onclick="filterSelection('vases')"> Vases</button>
+          <button class="btn" onclick="filterSelection('ornaments')"> Ornaments</button>
+          <button class="btn" onclick="filterSelection('pigeons')"> Pigeons</button>
+          <button class="btn" onclick="filterSelection('sale')">Seasonal</button>
+        </div>
+
+        <!-- Portfolio Gallery Grid -->
+
+        <div class="row">
+          <div class="column pigeons show">
+            <div class="content">
+              <img src="img/chips3.jpg" alt="pigeons" style="width:100%">
+            <a href="https://checkout.square.site/buy/LK4RHJMONFHC262PJ7PBM3DA"><h4>Pigeon with chips</h4></a>
+              <p>Lorem ipsum dolor..</p>
+
+            </div>
+          </div>
+
+
+          <div class="column pigeons show">
+            <div class="content">
+              <img src="img/IMG_3944.jpg" alt="pigeons" style="width:100%">
+              <h4>Elliot the Pigeon</h4>
+              <p>Lorem ipsum dolor..</p>
+            </div>
+          </div>
+          <div class="column vases show">
+            <div class="content">
+              <img src="img/beakvase.jpg" alt="vases" style="width:100%">
+              <h4>Vase</h4>
+              <p>Lorem ipsum dolor..</p>
+            </div>
+          </div>
+
+          <div class="column vases show">
+            <div class="content">
+              <img src="img/beakvase.jpg" alt="vases" style="width:100%">
+              <h4>Vase</h4>
+              <p>Lorem ipsum dolor..</p>
+            </div>
+          </div>
+          <div class="column ornaments show">
+            <div class="content">
+              <img src="img/Tree 2.jpg" alt="ornaments" style="width:100%">
+              <h4>Ornaments</h4>
+              <p>Lorem ipsum dolor..</p>
+            </div>
+          </div>
+          <div class="column vases show">
+            <div class="content">
+              <img src="img/beakvase.jpg" alt="vase" style="width:100%">
+              <h4>Vase</h4>
+              <p>Lorem ipsum dolor..</p>
+            </div>
+          </div>
+
+          <div class="column ornaments show">
+            <div class="content">
+              <img src="img/Tree 2.jpg" alt="ornaments" style="width:100%">
+              <h4>Ornaments</h4>
+              <p>Lorem ipsum dolor..</p>
+            </div>
+          </div>
+          <div class="column sale show">
+            <div class="content">
+              <img src="img/bluesmall.jpg" alt="sale" style="width:100%">
+              <h4>Sale</h4>
+              <p>Lorem ipsum dolor..</p>
+            </div>
+          </div>
+          <div class="column sale show">
+            <div class="content">
+              <img src="img/bluesmall.jpg" alt="sale" style="width:100%">
+              <h4>Sale</h4>
+              <p>Lorem ipsum dolor..</p>
+            </div>
+          </div>
+        <!-- END GRID -->
+        </div>
+        </section>
+        <br>
+
+
+
+
+
+
+  <!-- Learning Section -->
+  <section id="learning" class="projects-section bg-light">
+    <div class="container">
+<br><br>
+      <div class="row">
+        <div class="col-sm-3">
+        <img class="img-fluid mb-3 mb-lg-0" src="img/profi.jpg" alt="=Tex in the Studio" title="Tex in the Studio" height="200" width="250" align="left" hspace="12" vspace="15">
+      </div>
+        <div class="col-sm-6"><h2 class="text-black mb-6" align="center">Learning</h2><p class="text-black-50 mb-0" align="justify">Clay is an amazing versatile material to work with. Although pottery can be frustrating at times, it is cathartic and relaxing and an incredible blank canvas for your imagination! If you want to get involved to try it too, there are easy ways to start. <br><br>I'm a member of Nam Tran's brilliant Cernamic studio in London, where I occasionally teach taster sessions too. We've recently moved to brand new studio in Stoke Newington. If you'd like to come along and see what it's all about,<a href="http://www.cernamic.com"><b> have a look at their details here to book in a taster!</b></a></p>
+      </div>
+        <div class="col-sm-3"><img class="img-fluid mb-3 mb-lg-0" src="img/aubergine.jpg" alt="=Aubergine in progress" title="Aubergine in progress" height="200" width="250"align="right" hspace="12" vspace="15">
+      </div>
+      </div>
+  </div>
+  <br><br><br>
+  </section>
+
+
+
+
+
+
+  <!-- Contact Section -->
+  <section id="signup" class="contact-section bg-black">
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-md-4 mb-3 mb-md-0">
+          <div class="card py-4 h-100">
+            <div class="card-body text-center">
+                <i class="fab fa-instagram"></i>
+              <h4 class="text-uppercase m-0">Instagram</h4>
+
+              <hr class="my-4">
+                            <div class="small text-black-50">  <a href="http://instagram.com/RichardMoonstreet/">See my latest projects</a></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-3 mb-md-0">
+          <div class="card py-4 h-100">
+            <div class="card-body text-center">
+              <h4 class="text-uppercase m-0">Email</h4>
+              <hr class="my-4">
+              <div class="small text-black-50">
+                <a href="mailto:RichardMoonstreet@outlook.com">Email Us!</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-3 mb-md-0">
+          <div class="card py-4 h-100">
+            <div class="card-body text-center">
+              <i class="fab fa-twitter"></i>
+              <h4 class="text-uppercase m-0">Twitter</h4>
+
+              <hr class="my-4">
+              <div class="small text-black-50">  <a href="http://twitter.com/MoonstreetClay">Follow Me!</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="social d-flex justify-content-center">
+        <a href="http://www.twitter.com/MoonstreetClay" class="mx-2">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="http://www.instagram.com/RichardMoonstreet" class="mx-2">
+          <i class="fab fa-instagram"></i>
+        </a>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <footer class="bg-black small text-center text-white-50">
+    <div class="container">
+      Copyright &copy; Richard Moonstreet 2020<br>Content and images by Richard Moonstreet <br>Web development by <a href="http://twitter.com/azdolan94"</a>Aidan Dolan. </a>
+    </div><br><br>
+
+  <img src="https://i.imgur.com/CPQjguI.gif" alt="Proud to be a European LGBT designer" title="European LGBT designer network" height=70rem width=110rem align="centre" hspace=2rem>
+<br>
+  <!-- TrustBox widget - Starter -->
+  <div class="trustpilot-widget" data-locale="en-GB" data-template-id="5613c9cde69ddc09340c6beb" data-businessunit-id="5f5bd14954b2610001bcb49d" data-style-height="20%" data-style-width="20%" data-theme="light">
+    <a href="https://uk.trustpilot.com/review/richardmoonstreet.com" target="_blank" rel="noopener">Trustpilot</a>
+  </div>
+  <!-- End TrustBox widget -->
+
+  </footer>
+
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/grayscale.min.js"></script>
+
+</body>
+
+</html>
