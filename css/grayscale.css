@@ -37,7 +37,7 @@
   background-color: transparent;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 90%) {
   #mainNav {
     padding-top: 0;
     padding-bottom: 0;
