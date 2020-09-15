@@ -85,7 +85,7 @@
 }
 
 @media only screen and (max-width: 767px) {
-.masthead { background-position: right; }
+.masthead { background-position: 95%; }
   .masthead h1{
     font-size: 1.8rem;
   }
